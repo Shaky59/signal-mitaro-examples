@@ -1,15 +1,62 @@
 {
-  "v": 1,
-  "device_id": "mitaro-001",
-  "ts_ms": 1730000000000,
-  "src": "gpio",
-  "ch": 1,
-  "edge": "rise",
-  "level": 1,
-  "pulse_ms": 0,
-  "vin_class": "12V",
-  "meta": {
-    "fw": "0.0.1",
-    "board": "esp32s3"
-  }
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Mitaro Event v1",
+  "type": "object",
+  "required": [
+    "v",
+    "device_id",
+    "ts_ms",
+    "src",
+    "ch",
+    "edge",
+    "level",
+    "pulse_ms",
+    "vin_class",
+    "meta"
+  ],
+  "properties": {
+    "v": {
+      "type": "integer",
+      "const": 1
+    },
+    "device_id": {
+      "type": "string"
+    },
+    "ts_ms": {
+      "type": "integer"
+    },
+    "src": {
+      "type": "string",
+      "enum": ["gpio"]
+    },
+    "ch": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "edge": {
+      "type": "string",
+      "enum": ["rise", "fall"]
+    },
+    "level": {
+      "type": "integer",
+      "enum": [0, 1]
+    },
+    "pulse_ms": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "vin_class": {
+      "type": "string"
+    },
+    "meta": {
+      "type": "object",
+      "required": ["fw", "board"],
+      "properties": {
+        "fw": { "type": "string" },
+        "board": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
 }

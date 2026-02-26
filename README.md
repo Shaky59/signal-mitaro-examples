@@ -35,7 +35,19 @@ TBD
 </p>
 
 # Signal Mitaro
-
 Industrial PNP signals → Structured Events → Multi-path Communication
-
 Concept & reference design for robust industrial signal acquisition.
+
+---
+
+## Status
+
+Phase 0 – Early development  
+Hardware under design  
+Event engine concept validated  
+Minimal ESP32 example available
+
+Next:
+- Event format definition
+- CAN output example
+- Satellite uplink mock

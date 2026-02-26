@@ -51,3 +51,11 @@ Next:
 - Event format definition
 - CAN output example
 - Satellite uplink mock
+---
+
+## Status
+
+Work in progress.
+This repository documents the concept and early examples of Signal Mitaro.
+
+More examples coming soon.

@@ -33,3 +33,9 @@ TBD
 <p align="center">
   <img src="docs/images/docsimagesmitaro_board_ja.png" width="400">
 </p>
+
+# Signal Mitaro
+
+Industrial PNP signals → Structured Events → Multi-path Communication
+
+Concept & reference design for robust industrial signal acquisition.

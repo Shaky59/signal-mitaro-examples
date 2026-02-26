@@ -15,7 +15,6 @@ def load_schema(schema_path: Path) -> dict:
 
 def make_validator(schema: dict) -> Draft202012Validator:
     v = Draft202012Validator(schema)
-    # ここで schema自体の整合性チェックもできる（任意）
     v.check_schema(schema)
     return v
 
@@ -52,7 +51,6 @@ def main():
             if not line:
                 continue
 
-            # 改行単位（NDJSON）
             try:
                 s = line.decode("utf-8", errors="replace").strip()
             except Exception:
@@ -77,13 +75,8 @@ def main():
             # Schema validate
             errors = sorted(validator.iter_errors(obj), key=lambda x: x.path)
             if errors:
-                # reject.ndjson へ「理由付き」で保存（仕様と実装を一致させるための証跡）
                 rec = {
-                    "recv_meta": {
-                        "recv_ts_ms": recv_ts,
-                        "recv_seq": recv_seq,
-                        "transport": transport,
-                    },
+                    "recv_meta": {"recv_ts_ms": recv_ts, "recv_seq": recv_seq, "transport": transport},
                     "reason": [f"{'/'.join(map(str, e.path))}: {e.message}" for e in errors],
                     "raw": obj,
                 }
@@ -94,13 +87,9 @@ def main():
                     sys.exit(2)
                 continue
 
-            # OK: 受信メタを付与して stdout に出す（Phase1の最小ゴール）
+            # OK: attach receive metadata
             out = dict(obj)
-            out["recv_meta"] = {
-                "recv_ts_ms": recv_ts,
-                "recv_seq": recv_seq,
-                "transport": transport,
-            }
+            out["recv_meta"] = {"recv_ts_ms": recv_ts, "recv_seq": recv_seq, "transport": transport}
             print(json.dumps(out, ensure_ascii=False), flush=True)
 
 

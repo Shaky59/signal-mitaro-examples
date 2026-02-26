@@ -1,5 +1,11 @@
 # Signal Mitaro (信号みた郎)
 
+Robust industrial PNP signal acquisition board  
+→ Structured event generation  
+→ Multi-path communication (Wi-Fi / Bluetooth / CAN / Satellite)
+
+This repository contains early design documents and reference examples.
+
 **Industrial PNP signals → Structured Events → Multi-path Communication**
 
 This repository provides reference examples for:

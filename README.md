@@ -24,12 +24,12 @@ TBD
 
 <h2>Concept Illustration</h2>
 
-<h3>Japanese Version</h3>
+<h3>French Version</h3>
 <p align="center">
   <img src="docs/images/docsimagesmitaro_board_fr.png" width="400">
 </p>
 
-<h3>French Version</h3>
+<h3>Japanese Version</h3>
 <p align="center">
   <img src="docs/images/docsimagesmitaro_board_ja.png" width="400">
 </p>

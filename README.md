@@ -64,3 +64,5 @@ Next:
 Work in progress.
 Minimal ESP32 example available.
 More examples coming soon.
+
+- Event schema: `schemas/event_v1.json`

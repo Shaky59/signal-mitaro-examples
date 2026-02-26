@@ -19,3 +19,11 @@ This repository provides reference examples for:
 
 ## License
 TBD
+
+## Concept Illustration
+
+### Japanese Version
+![Signal Mitaro Board JA](docs/images/mitaro_board_ja.png)
+
+### French Version
+![Signal Mitaro Board FR](docs/images/mitaro_board_fr.png)

@@ -1,0 +1,15 @@
+{
+  "v": 1,
+  "device_id": "mitaro-001",
+  "ts_ms": 1730000000000,
+  "src": "gpio",
+  "ch": 1,
+  "edge": "rise",
+  "level": 1,
+  "pulse_ms": 0,
+  "vin_class": "12V",
+  "meta": {
+    "fw": "0.0.1",
+    "board": "esp32s3"
+  }
+}

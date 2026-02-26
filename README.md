@@ -25,3 +25,39 @@ This repository documents the early design and reference implementations.
 ---
 
 ## Repository Structure
+
+signal-mitaro-examples/
+├─ README.md
+├─ docs/images/
+├─ schemas/
+---
+
+## Event Specification
+
+Event format is defined in:
+
+`schemas/event_v1.json`
+
+This schema represents the structured output generated from physical input signals.
+
+---
+
+## Examples
+
+- Minimal ESP32 GPIO event logger  
+  `examples/esp32/gpio_logger/`
+
+More communication examples (CAN / Wi-Fi / Satellite) will be added progressively.
+
+---
+
+## Status
+
+Work in progress.  
+Minimal ESP32 example available.  
+Hardware under design.
+│ └─ event_v1.json
+└─ examples/
+└─ esp32/
+└─ gpio_logger/
+

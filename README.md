@@ -1,34 +1,16 @@
 # Signal Mitaro (入力信号トランスファーボード)
 
-Robust industrial PNP signal acquisition board  
+Industrial PNP signal acquisition platform  
 → Structured event generation  
 → Multi-path communication (Wi-Fi / Bluetooth / CAN / Satellite)
 
-This repository contains early design documents and reference examples.
+Signal Mitaro is a robust industrial input board concept designed to convert physical PNP signals into structured digital events suitable for local and global transmission.
 
-**Industrial PNP signals → Structured Events → Multi-path Communication**
+This repository documents the early design and reference implementations.
 
-This repository provides reference examples for:
-- ESP32 / Raspberry Pi / Arduino
-- Wi-Fi / Bluetooth / CAN / Satellite (Iridium)
-
-> Status: **Phase 0 (early development)**  
-> Hardware is under development. This repo focuses on **concept + event format + minimal examples**.
+---
 
 ## Concept Illustration
-(coming soon)
-
-## Quick Start
-- Level 0: GPIO → JSON events (serial)
-- Level 1: Wi-Fi/BLE → send events
-- Level 2: Satellite → queued delivery (optional)
-
-## License
-TBD
-
-## Concept Illustration
-
-<h2>Concept Illustration</h2>
 
 <h3>French Version</h3>
 <p align="center">
@@ -40,29 +22,6 @@ TBD
   <img src="docs/images/docsimagesmitaro_board_ja.png" width="400">
 </p>
 
-# Signal Mitaro
-Industrial PNP signals → Structured Events → Multi-path Communication
-Concept & reference design for robust industrial signal acquisition.
-
 ---
 
-## Status
-
-Phase 0 – Early development  
-Hardware under design  
-Event engine concept validated  
-Minimal ESP32 example available
-
-Next:
-- Event format definition
-- CAN output example
-- Satellite uplink mock
----
-
-## Status
-
-Work in progress.
-Minimal ESP32 example available.
-More examples coming soon.
-
-- Event schema: `schemas/event_v1.json`
+## Repository Structure

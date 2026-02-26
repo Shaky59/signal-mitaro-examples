@@ -62,6 +62,5 @@ Next:
 ## Status
 
 Work in progress.
-This repository documents the concept and early examples of Signal Mitaro.
-
+Minimal ESP32 example available.
 More examples coming soon.

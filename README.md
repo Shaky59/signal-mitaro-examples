@@ -22,8 +22,10 @@ TBD
 
 ## Concept Illustration
 
-### Japanese Version
-![JA](docs/images/docsimagesmitaro_board_ja.png)
+<h2>Concept Illustration</h2>
 
-### French Version
-![FR](docs/images/docsimagesmitaro_board_fr.png)
+<h3>Japanese Version</h3>
+<img src="docs/images/docsimagesmitaro_board_ja.png" width="600">
+
+<h3>French Version</h3>
+<img src="docs/images/docsimagesmitaro_board_fr.png" width="600">

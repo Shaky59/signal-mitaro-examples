@@ -1,4 +1,4 @@
-# Signal Mitaro (信号みた郎)
+# Signal Mitaro (入力信号トランスファーボード)
 
 Robust industrial PNP signal acquisition board  
 → Structured event generation  
